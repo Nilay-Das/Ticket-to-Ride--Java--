@@ -1,0 +1,36 @@
+List of Refactorings
+====================
+
+Name/Banner# of Developer 1: Nilay Das / B00868052
+
+
+Refactorings:
+=============
+
+1. File: Link.java
+   Location (method/approx. line #): Line 13 - Line 18
+   Issue Identified: Instance variables were public.
+   Description of fix: Made the instance variables protected.
+   Implemented: Yes (Completely, all tests pass)
+
+2. File: RouteCost.java
+   Location (method/approx. line #): main()
+   Issue Identified: Too much code in the main method for taking input and output.
+   Description of fix: Moved the code for taking input and output into three separate methods: firstInput(), secondInput(), output().
+   Implemented: Yes (Completely, all tests pass)
+
+3. File: RouteCost.java
+   Location (method/approx. line #): firstInput(), secondInput() 
+   Issue Identified: The for loop used for taking input is complicated to understand and is vulnerable to errors.
+   Description of fix: Used while loop to take inputs, each input value is stored in individual variables. The code is cleaner now and much easier to understand how each input is being taken.
+   Implemented: Yes (Completely, all tests pass)
+
+4. File: City.java
+   Location (method/approx. line #): makeTree()
+   Issue Identified: Too much code in just one method and the code is also a bit complicated to understand.
+   Description of fix: Code should be moved into separate methods based on its functionality and there should be more documentation/comments to explain how the code is really working.
+   Implemented: No
+
+
+
+
